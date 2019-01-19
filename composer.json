@@ -1,0 +1,12 @@
+{
+    "name": "schnubor/saeume",
+    "require": {
+        "contentful/contentful": "^4.1"
+    },
+    "authors": [
+        {
+            "name": "Christian Korndoerfer",
+            "email": "schnuppser@gmail.com"
+        }
+    ]
+}

@@ -24,4 +24,8 @@
 
         return $text;
     }
+
+    function debug_to_console( $data ) {
+        echo "<script>console.warn(" . json_encode($data) . ");</script>";
+    }
 ?>

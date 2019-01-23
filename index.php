@@ -1,5 +1,8 @@
-<?php define( 'INCLUDE_DIR', dirname( __FILE__ ) . '/inc/' );
+<?php 
+define( 'INCLUDE_DIR', dirname( __FILE__ ) . '/inc/' );
+require __DIR__ . '/vendor/autoload.php';
 require_once( INCLUDE_DIR . 'helper.php' );
+require_once( INCLUDE_DIR . 'contentful-init.php' );
 
 $rules = array( 
     'project'   => "/project/(?'slug'[^/]+)",    // '/project/some-project-slug'

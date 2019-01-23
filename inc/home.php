@@ -1,3 +1,13 @@
+<?php
+    $query = new \Contentful\Delivery\Query();
+    $query->setContentType('project');
+    try {
+        $projects = $contentfulClient->getEntries($query);
+    } catch (\Contentful\Core\Exception\NotFoundException $exception) {
+        debug_to_console( 'Contentful error: ' . $exception );
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,30 +19,10 @@
 <body>
     <h1>Home</h1>
 
-    <ul class="js-list"></ul>
-
-    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-    <script src="/assets/js/contentful.js"></script>
-    <script type="text/javascript">
-        function convertToSlug(Text)
-        {
-            return Text
-                .toLowerCase()
-                .replace(/ /g,'-')
-                .replace(/[^\w-]+/g,'');
+    <?php
+        foreach ($projects as $project) {
+            echo '<a href="/project/' . $project->getId() . '">' . $project->headline . '</a>';
         }
-
-        contentfulClient.getEntries()
-            .then(function (entries) {
-                // log the title for all the entries that have it
-                entries.items.forEach(function (entry) {
-                    if(entry.fields.headline) {
-                        console.log(entry)
-                        $('.js-list').append( `<li><a href="/project/${convertToSlug(entry.fields.headline)}">${entry.fields.headline}</a></li>` )
-                    }
-                })
-            });
-    </script>
+    ?>
 </body>
 </html>

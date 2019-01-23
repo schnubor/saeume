@@ -2,7 +2,13 @@
     $uri = rtrim( dirname($_SERVER["SCRIPT_NAME"]), '/' );
     $uri = '/' . trim( str_replace( $uri, '', $_SERVER['REQUEST_URI'] ), '/' );
     $uri = urldecode( $uri );
-    $slug = substr($uri, strrpos($uri, '/') + 1);
+    $projectId = substr($uri, strrpos($uri, '/') + 1);
+
+    try {
+        $project = $contentfulClient->getEntry( $projectId );
+    } catch (\Contentful\Core\Exception\NotFoundException $exception) {
+        debug_to_console( 'Contentful error: ' . $exception );
+    }
 ?>
 
 <!DOCTYPE html>
@@ -14,15 +20,14 @@
     <title><?php echo $slug?></title>
 </head>
 <body>
-    <h1 class="js-headline"></h1>
-    <p class="js-description"></p>
-    <div class="js-images"></div>
-
-    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-    <script src="/assets/js/contentful.js"></script>
-    <script type="text/javascript">
-        getProject(<?php $slug ?>);
-    </script>
+    <h2><?php echo $project->headline ?></h2>
+    <p><?php echo $project->description ?></p>
+    <div class="images">
+        <?php
+            foreach( $project->pictures as $asset ) {
+                echo '<img src="' . $asset->getFile()->getUrl() .'" />';
+            }
+        ?>
+    </div>
 </body>
 </html>

@@ -1,7 +1,8 @@
 {
     "name": "schnubor/saeume",
     "require": {
-        "contentful/contentful": "^4.1"
+        "contentful/contentful": "^4.1",
+        "leafo/lessphp": "0.4.0"
     },
     "authors": [
         {

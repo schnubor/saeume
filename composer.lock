@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "27359a6c7b7bfa59b46d91733f8b0a81",
+    "content-hash": "f99b7cfb25bd498d5b9bb61a889cc0b1",
     "packages": [
         {
             "name": "cache/adapter-common",
@@ -306,16 +306,16 @@
         },
         {
             "name": "contentful/core",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contentful/contentful-core.php.git",
-                "reference": "ba933821bc7ff9f88023b852f6221747f024a297"
+                "reference": "81e3d550f80c0e5e3f39c8b4abe9833eaf55865c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contentful/contentful-core.php/zipball/ba933821bc7ff9f88023b852f6221747f024a297",
-                "reference": "ba933821bc7ff9f88023b852f6221747f024a297",
+                "url": "https://api.github.com/repos/contentful/contentful-core.php/zipball/81e3d550f80c0e5e3f39c8b4abe9833eaf55865c",
+                "reference": "81e3d550f80c0e5e3f39c8b4abe9833eaf55865c",
                 "shasum": ""
             },
             "require": {
@@ -349,7 +349,7 @@
                 "MIT"
             ],
             "description": "Foundation library for Contentful PHP SDKs",
-            "time": "2018-11-26T09:59:31+00:00"
+            "time": "2019-01-25T11:59:16+00:00"
         },
         {
             "name": "contentful/rich-text",
@@ -631,6 +631,47 @@
                 "versions"
             ],
             "time": "2018-06-13T13:22:40+00:00"
+        },
+        {
+            "name": "leafo/lessphp",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/lessphp.git",
+                "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/51f3f06f0fe78a722dabfd14578444bdd078d9de",
+                "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "lessphp is a compiler for LESS written in PHP.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2013-08-09T17:09:19+00:00"
         },
         {
             "name": "ocramius/package-versions",

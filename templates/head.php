@@ -6,4 +6,3 @@
     <meta name="googlebot" content="index,follow">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">

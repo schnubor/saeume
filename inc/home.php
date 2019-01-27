@@ -19,10 +19,12 @@
 <body>
     <h1>Home</h1>
 
+    <ul>
     <?php
         foreach ($projects as $project) {
-            echo '<a href="/project/' . $project->getId() . '">' . $project->headline . '</a>';
+            echo '<li><a href="/project/' . $project->getId() . '">' . $project->headline . '</a></li>';
         }
     ?>
+    </ul>
 </body>
 </html>

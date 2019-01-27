@@ -1,16 +1,12 @@
 <?php
-    require_once(realpath(dirname(__FILE__) . "/../config.php"));
+    //require "lessc.inc.php";
 
     function renderHead($title, $description)
     {
-        require_once(LIBRARY_PATH . '/lessc.inc.php');
-        $less = new lessc;
-        $less->compileFile(
-            LESS_PATH . '/main.less',
-            ASSETS_PATH . '/css/main.css'
-        );
+        $less = new \lessc;
+        $less->compileFile( LESS_DIR . '/main.less' );
 
-        require_once(TEMPLATES_PATH . '/head.php');
+        require_once(TEMPLATE_DIR . '/head.php');
 
         echo "\t<title>" . $title . "</title>";
         echo "\t<meta name=\"description\" content=\"" . $description . "\">\n";

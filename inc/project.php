@@ -16,14 +16,18 @@
 <html lang="en">
 <?php renderHead( $project->headline, $project->description ) ?>
 <body>
+    <?php include( TEMPLATE_DIR . '/navigation.php' )?>
+
     <h2><?php echo $project->headline ?></h2>
     <p><?php echo $project->description ?></p>
-    <div class="images">
+    <div class="images js-slick">
         <?php
             foreach( $project->pictures as $asset ) {
-                echo '<img src="' . $asset->getFile()->getUrl() .'" />';
+                echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';
             }
         ?>
     </div>
+
+    <?php include( TEMPLATE_DIR . '/footer.php') ?>
 </body>
 </html>

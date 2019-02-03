@@ -6,4 +6,6 @@
     <meta name="googlebot" content="index,follow">
     <link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/components-font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="/assets/css/compiled.css">

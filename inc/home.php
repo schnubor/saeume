@@ -10,21 +10,19 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Home</h1>
+    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'TODO: Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich' ) ?>
 
-    <ul>
-    <?php
-        foreach ($projects as $project) {
-            echo '<li><a href="/project/' . $project->getId() . '">' . $project->headline . '</a></li>';
-        }
-    ?>
-    </ul>
-</body>
+    <body>
+        <?php include( TEMPLATE_DIR . '/navigation.php') ?>
+        
+        <ul>
+        <?php
+            foreach ($projects as $project) {
+                echo '<li><a href="/project/' . $project->getId() . '">' . $project->headline . '</a></li>';
+            }
+        ?>
+        </ul>
+
+        <?php include( TEMPLATE_DIR . '/footer.php') ?>
+    </body>
 </html>

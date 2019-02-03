@@ -4,5 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow,noodp">
     <meta name="googlebot" content="index,follow">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/css/compiled.css">

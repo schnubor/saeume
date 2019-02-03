@@ -4,6 +4,10 @@ require __DIR__ . '/vendor/autoload.php';
 require_once( INCLUDE_DIR . 'helper.php' );
 require_once( INCLUDE_DIR . 'contentful-init.php' );
 
+// Less compiler
+$less = new \lessc;
+$less->checkedCompile( LESS_DIR . '/main.less', __DIR__ . '/assets/css/compiled.css' );
+
 $rules = array( 
     'project'   => "/project/(?'slug'[^/]+)",    // '/project/some-project-slug'
     'home'      => "/"                           // '/'

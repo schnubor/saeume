@@ -1,11 +1,6 @@
 <?php
-    //require "lessc.inc.php";
-
     function renderHead($title, $description)
     {
-        $less = new \lessc;
-        $less->compileFile( LESS_DIR . '/main.less' );
-
         require_once(TEMPLATE_DIR . '/head.php');
 
         echo "\t<title>" . $title . "</title>";

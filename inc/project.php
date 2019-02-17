@@ -1,5 +1,4 @@
 <?php
-    require( TEMPLATE_DIR . 'renderHead.php' );
     $uri = rtrim( dirname($_SERVER["SCRIPT_NAME"]), '/' );
     $uri = '/' . trim( str_replace( $uri, '', $_SERVER['REQUEST_URI'] ), '/' );
     $uri = urldecode( $uri );
@@ -18,15 +17,19 @@
 <body>
     <?php include( TEMPLATE_DIR . '/navigation.php' )?>
 
-    <h2><?php echo $project->headline ?></h2>
-    <p><?php echo $project->description ?></p>
-    <div class="images js-slick">
-        <?php
-            foreach( $project->pictures as $asset ) {
-                echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';
-            }
-        ?>
-    </div>
+    <section>
+        <div class="container">
+            <h2><?php echo $project->headline ?></h2>
+            <p><?php echo $project->description ?></p>
+            <div class="images js-slick">
+                <?php
+                    foreach( $project->pictures as $asset ) {
+                        echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';
+                    }
+                ?>
+            </div>
+        </div>
+    </section>
 
     <?php include( TEMPLATE_DIR . '/footer.php') ?>
 </body>

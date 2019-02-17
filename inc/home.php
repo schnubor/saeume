@@ -1,4 +1,5 @@
 <?php
+    require( INCLUDE_DIR . 'renderProject.php' );
     $query = new \Contentful\Delivery\Query();
     $query->setContentType('project');
     try {
@@ -14,14 +15,18 @@
 
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>
-        
-        <ul>
-        <?php
-            foreach ($projects as $project) {
-                echo '<li><a href="/project/' . $project->getId() . '">' . $project->headline . '</a></li>';
-            }
-        ?>
-        </ul>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                <?php
+                    foreach ($projects as $project) {
+                        renderProject($project);
+                    }
+                ?>
+                </div>
+            </div>
+        </section>
 
         <?php include( TEMPLATE_DIR . '/footer.php') ?>
     </body>

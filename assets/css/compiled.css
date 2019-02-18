@@ -38,6 +38,22 @@ section {
   top: 0;
   background-color: rgba(0,0,0,0.2);
 }
+.title {
+  margin-bottom: 24px;
+}
+.slick-slider img {
+  width: 100%;
+}
+.slick-dots {
+  position: relative;
+  bottom: -15px;
+}
+.slick-dots li button:before {
+  font-size: 10px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 60px;
+}
 footer {
   display: flex;
   align-items: center;

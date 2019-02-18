@@ -21,9 +21,9 @@
 
     <section>
         <div class="container">
-            <h2><?php echo $project->headline ?></h2>
+            <h2 class="title"><?php echo $project->headline ?></h2>
             
-            <div class="images js-slick">
+            <div class="js-slick">
                 <?php
                     foreach( $project->pictures as $asset ) {
                         echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';

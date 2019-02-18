@@ -9,24 +9,31 @@
     } catch (\Contentful\Core\Exception\NotFoundException $exception) {
         debug_to_console( 'Contentful error: ' . $exception );
     }
+
+    $renderer = new \Contentful\RichText\Renderer();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<?php renderHead( $project->headline, $project->description ) ?>
+<?php renderHead( $project->headline, $project->metaDescription ) ?>
 <body>
     <?php include( TEMPLATE_DIR . '/navigation.php' )?>
 
     <section>
         <div class="container">
             <h2><?php echo $project->headline ?></h2>
-            <p><?php echo $project->description ?></p>
+            
             <div class="images js-slick">
                 <?php
                     foreach( $project->pictures as $asset ) {
                         echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';
                     }
                 ?>
+            </div>
+            <p><?php echo $renderer->render($project->description) ?></p>
+
+            <div class="row">
+
             </div>
         </div>
     </section>

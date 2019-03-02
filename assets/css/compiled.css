@@ -18,6 +18,48 @@
 .navigation-wrapper .bars i {
   cursor: pointer;
 }
+.nav-overlay {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.nav-overlay .close {
+  position: absolute;
+  top: 35px;
+  right: 45px;
+  cursor: pointer;
+  font-size: 28px;
+  color: #111111;
+  opacity: 1;
+}
+.nav-overlay .list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-overlay .list .item {
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 16px;
+}
+.nav-overlay .list .item a {
+  color: #111111;
+}
+.nav-overlay .list .item.light {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 8px 0;
+}
 .preview {
   width: 100%;
 }
@@ -26,6 +68,7 @@ section {
 }
 .project {
   transition: .4s all;
+  margin: 16px 0;
 }
 .project:hover {
   transform: translateY(-4px);
@@ -41,6 +84,10 @@ section {
 }
 .title {
   margin-bottom: 24px;
+  font-family: 'Hind', sans-serif;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 .slick-slider img {
   width: 100%;
@@ -55,8 +102,26 @@ section {
 .slick-dotted.slick-slider {
   margin-bottom: 60px;
 }
+.slick-dots li button:before {
+  color: #9b2321;
+}
+.slick-dots li.slick-active button:before {
+  color: #9b2321;
+}
 footer {
   display: flex;
   text-align: center;
   height: 80px;
+  margin-top: 32px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #111111;
+}
+a {
+  color: #9b2321;
+}
+a:hover,
+a:active {
+  color: #9b2321;
 }

@@ -54,6 +54,11 @@
 }
 .nav-overlay .list .item a {
   color: #111111;
+  transition: .2s all;
+}
+.nav-overlay .list .item a:hover {
+  color: #9b2321;
+  text-decoration: none;
 }
 .nav-overlay .list .item.light {
   font-weight: 400;
@@ -101,9 +106,6 @@ p {
 }
 .slick-dotted.slick-slider {
   margin-bottom: 60px;
-}
-.slick-dots li button:before {
-  color: #9b2321;
 }
 .slick-dots li.slick-active button:before {
   color: #9b2321;

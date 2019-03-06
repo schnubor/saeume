@@ -110,6 +110,12 @@ p {
 .slick-dots li.slick-active button:before {
   color: #9b2321;
 }
+#office h2 {
+  margin-bottom: 32px;
+}
+#office img {
+  width: 100%;
+}
 footer {
   display: flex;
   text-align: center;

@@ -1,9 +1,11 @@
 <?php
-    // try {
-    //     $projects = $contentfulClient->getEntry($query);
-    // } catch (\Contentful\Core\Exception\NotFoundException $exception) {
-    //     debug_to_console( 'Contentful error: ' . $exception );
-    // }
+    try {
+        $entry = $contentfulClient->getEntry('4iBqsIVJm82DftUhiDlQXJ');
+    } catch (\Contentful\Core\Exception\NotFoundException $exception) {
+        debug_to_console( 'Contentful error: ' . $exception );
+    }
+
+    $renderer = new \Contentful\RichText\Renderer();
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +15,17 @@
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>
 
-        <section>
+        <section id="office">
             <div class="container">
-                Office
+                <h2><?php echo $entry->title ?></h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <?php echo nl2br($renderer->render($entry->profil)) ?>
+                    </div>
+                    <div class="col-md-6">
+                        <?php echo '<img src="' . $entry->profilbild->getFile()->getUrl() .'" />'; ?>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -13,6 +13,7 @@ $rules = array(
     'project'   => "/project/(?'slug'[^/]+)",  // '/project/some-project-slug'
     'home'      => "/",                        // '/'
     'office'    => "/office",                  // '/office'
+    'contact'   => "/kontakt",                 // '/kontakt'
     'impressum' => "/impressum",               // '/impressum'
 );
 

@@ -30,7 +30,7 @@
                     }
                 ?>
             </div>
-            <p><?php echo $renderer->render($project->description) ?></p>
+            <p><?php echo nl2br($renderer->render($project->description)) ?></p>
 
             <div class="row">
 

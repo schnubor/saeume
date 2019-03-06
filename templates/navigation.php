@@ -43,7 +43,7 @@
             <a href="/office">Technik</a>
         </li>
         <li class="item js-close">
-            <a href="/office">Kontakt</a>
+            <a href="/kontakt">Kontakt</a>
         </li>
         <li class="item light js-close">
             <a href="/impressum">Impressum</a>

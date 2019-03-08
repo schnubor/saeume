@@ -113,8 +113,19 @@ p {
 #office h2 {
   margin-bottom: 32px;
 }
+#office h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+#office ul {
+  margin: 0;
+}
 #office img {
   width: 100%;
+}
+#office .divider {
+  border-top: 1px solid transparent;
+  margin: 34px 0;
 }
 footer {
   display: flex;

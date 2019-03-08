@@ -17,9 +17,11 @@ $rules = array(
     'impressum' => "/impressum",               // '/impressum'
 );
 
-$uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
-$uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
-$uri = urldecode($uri);
+$uri = rtrim( dirname($_SERVER["SCRIPT_NAME"]), '/' );
+$uri = '/' . trim( str_replace( $uri, '', $_SERVER['REQUEST_URI'] ), '/' );
+$uri = urldecode( $uri );
+$uri = preg_replace('/\/?\?.*/', '', $uri);
+$uri = $uri ? $uri : '/';
 
 foreach ($rules as $action => $rule) {
     if (preg_match('~^' . $rule . '$~i', $uri, $params)) {

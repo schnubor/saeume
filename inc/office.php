@@ -17,9 +17,9 @@ $renderer = new \Contentful\RichText\Renderer();
 
     <section id="office">
         <div class="container">
-            <h2><?php echo $entry->title ?></h2>
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="profil">
                 <div class="col-md-6">
+                    <h2><?php echo $entry->title ?></h2>
                     <?php echo nl2br($renderer->render($entry->profil)) ?>
                 </div>
                 <div class="col-md-6">
@@ -29,21 +29,22 @@ $renderer = new \Contentful\RichText\Renderer();
 
             <hr class="divider">
 
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="team">
                 <div class="col-md-6">
                     <?php echo '<img src="' . $entry->portraitbild->getFile()->getUrl() . '" />'; ?>
                 </div>
                 <div class="col-md-6">
+                    <h2>Dortje Säum</h2>
                     <?php echo nl2br($renderer->render($entry->portrait)) ?>
                 </div>
             </div>
 
             <hr class="divider">
 
-            <div class="row">
+            <div class="row" id="leistungen">
                 <div class="col-md-12">
                     <div class="list">
-                        <h3>Leistungen</h3>
+                        <h2>Leistungen</h3>
                         <?php echo nl2br($renderer->render($entry->leistungen)) ?>
                     </div>
                 </div>
@@ -51,10 +52,10 @@ $renderer = new \Contentful\RichText\Renderer();
 
             <hr class="divider">
 
-            <div class="row">
+            <div class="row" id="technik">
                 <div class="col-md-6">
                         <div class="list">
-                            <h3>Technik</h3>
+                            <h2>Technik</h3>
                             <?php echo nl2br($renderer->render($entry->technik)) ?>
                         </div>
                     </div>

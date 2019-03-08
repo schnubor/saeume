@@ -31,16 +31,16 @@
             <a href="/office">Büro</a>
         </li>
         <li class="item light js-close">
-            <a href="/office">Profil</a>
+            <a href="/office#profil">Profil</a>
         </li>
         <li class="item light js-close">
-            <a href="/office">Portrait & Team</a>
+            <a href="/office#team">Portrait & Team</a>
         </li>
         <li class="item light js-close">
-            <a href="/office">Leistungen</a>
+            <a href="/office#leistungen">Leistungen</a>
         </li>
         <li class="item light js-close">
-            <a href="/office">Technik</a>
+            <a href="/office#technik">Technik</a>
         </li>
         <li class="item js-close">
             <a href="/kontakt">Kontakt</a>

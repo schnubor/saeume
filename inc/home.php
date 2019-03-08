@@ -1,5 +1,5 @@
 <?php
-    require( INCLUDE_DIR . 'renderProject.php' );
+    require( TEMPLATE_DIR . 'renderProject.php' );
     $query = new \Contentful\Delivery\Query();
     $query->setContentType('project');
     try {

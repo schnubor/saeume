@@ -105,6 +105,16 @@ section {
 p {
   font-family: 'Open Sans', sans-serif;
 }
+h4 {
+  font-family: 'Hind', sans-serif;
+}
+.divider {
+  border-top: 1px solid transparent;
+  margin-bottom: 24px;
+}
+.slide {
+  margin: 16px;
+}
 .slick-slider img {
   width: 100%;
 }

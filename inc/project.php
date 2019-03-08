@@ -1,11 +1,15 @@
 <?php
+    require( TEMPLATE_DIR . 'renderSlide.php' );
     $uri = rtrim( dirname($_SERVER["SCRIPT_NAME"]), '/' );
     $uri = '/' . trim( str_replace( $uri, '', $_SERVER['REQUEST_URI'] ), '/' );
     $uri = urldecode( $uri );
     $projectId = substr($uri, strrpos($uri, '/') + 1);
+    $query = new \Contentful\Delivery\Query();
+    $query->setContentType('project');
 
     try {
         $project = $contentfulClient->getEntry( $projectId );
+        $allProjects = $contentfulClient->getEntries($query);
     } catch (\Contentful\Core\Exception\NotFoundException $exception) {
         debug_to_console( 'Contentful error: ' . $exception );
     }
@@ -30,10 +34,26 @@
                     }
                 ?>
             </div>
-            <p><?php echo nl2br($renderer->render($project->description)) ?></p>
 
-            <div class="row">
+            <p>
+                <?php echo nl2br($renderer->render($project->description)) ?>
+            </p>
 
+            <hr class="divider">
+
+            <div class="row d-none d-md-block">
+                <div class="col">
+                    <h4>Weitere Projekte</h4>
+                    <div class="js-slick-multiple">
+                        <?php
+                            foreach ($allProjects as $otherProject) {
+                                if( $project->getId() != $otherProject->getId() ) {
+                                    renderSlide($otherProject);
+                                }
+                            }
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

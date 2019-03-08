@@ -1,6 +1,16 @@
 <footer>
     <div class="container">
-    © Alle Rechte vorbehalten, Säum Architekten
+        <hr>
+        <div class="row">
+            <div class="col-md-8">
+                © Alle Rechte vorbehalten, 
+                <a href="/impressum" target="_blank">Impressum</a>, 
+                <a href="/datenschutz" target="_blank">Datenschutz</a>
+            </div>
+            <div class="col-md-4 text-right">
+                Site by <a href="https://chko.org" target="_blank">chko.org</a>
+            </div>
+        </div>
     </div>
 </footer>
 

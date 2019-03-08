@@ -1,5 +1,5 @@
 <?php
-    function renderHead($title, $description)
+    function renderHead($title, $description, $noindex = false)
     {
         require_once(TEMPLATE_DIR . '/head.php');
 
@@ -11,7 +11,8 @@
         echo "\t<meta property=\"og:title\" content=\"" . $title . "\">\n";
         echo "\t<meta property=\"og:image\" content=\"http://{$_SERVER['HTTP_HOST']}/img/content/fb.png\">\n";
         echo "\t<meta property=\"og:description\" content=\"" . $description . "\">\n";
-        echo "\t<meta property=\"og:site_name\" content=\"Dr. med. B. Schulze - Fachärztin für Urologie\">\n";
+        echo "\t<meta property=\"og:site_name\" content=\"Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich\">\n";
+        echo $noindex ? "\t<meta name=\"robots\" content=\"noindex,nofollow\">\n" : '';
         echo "</head>";
     }
 ?>

@@ -45,8 +45,5 @@
         <li class="item js-close">
             <a href="/kontakt">Kontakt</a>
         </li>
-        <li class="item light js-close">
-            <a href="/impressum">Impressum</a>
-        </li>
     </ul>
 </div>

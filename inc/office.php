@@ -34,7 +34,7 @@ $renderer = new \Contentful\RichText\Renderer();
                     <?php echo '<img src="' . $entry->portraitbild->getFile()->getUrl() . '" />'; ?>
                 </div>
                 <div class="col-md-6">
-                    <h2>Dortje Säum</h2>
+                    <h2>Dortje Säum & Team</h2>
                     <?php echo nl2br($renderer->render($entry->portrait)) ?>
                 </div>
             </div>

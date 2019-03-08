@@ -87,6 +87,17 @@ section {
   top: 0;
   background-color: rgba(0,0,0,0.2);
 }
+#contact ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#contact ul li {
+  margin: 8px 0;
+}
+#contact ul i {
+  margin-right: 8px;
+}
 .title {
   margin-bottom: 24px;
   font-family: 'Hind', sans-serif;
@@ -126,9 +137,9 @@ p {
 }
 footer {
   display: flex;
-  text-align: center;
   height: 80px;
   margin-top: 32px;
+  font-size: 14px;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -140,4 +151,7 @@ a {
 a:hover,
 a:active {
   color: #9b2321;
+}
+.legal h1 {
+  margin-bottom: 32px;
 }

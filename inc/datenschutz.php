@@ -1,6 +1,6 @@
 <?php
 try {
-    $entry = $contentfulClient->getEntry('46oowcifQLKUh94ixdm8PI');
+    $entry = $contentfulClient->getEntry('7qUoD8kEtwaDjGnyorQ5CR');
 } catch (\Contentful\Core\Exception\NotFoundException $exception) {
     debug_to_console('Contentful error: ' . $exception);
 }
@@ -10,7 +10,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'TODO: Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich | Impressum', true ) ?>
+    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich | Datenschutz', 'TODO: Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', true ) ?>
 
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>

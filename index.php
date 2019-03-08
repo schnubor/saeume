@@ -10,11 +10,12 @@ $less = new \lessc;
 $less->compileFile(LESS_DIR . '/main.less', __DIR__ . '/assets/css/compiled.css');
 
 $rules = array(
-    'project'   => "/project/(?'slug'[^/]+)",  // '/project/some-project-slug'
-    'home'      => "/",                        // '/'
-    'office'    => "/office",                  // '/office'
-    'contact'   => "/kontakt",                 // '/kontakt'
-    'impressum' => "/impressum",               // '/impressum'
+    'project'     => "/project/(?'slug'[^/]+)",  // '/project/some-project-slug'
+    'home'        => "/",                        // '/'
+    'office'      => "/office",                  // '/office'
+    'contact'     => "/kontakt",                 // '/kontakt'
+    'impressum'   => "/impressum",               // '/impressum'
+    'datenschutz' => "/datenschutz",             // '/datenschutz'
 );
 
 $uri = rtrim( dirname($_SERVER["SCRIPT_NAME"]), '/' );

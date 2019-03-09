@@ -11,7 +11,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'TODO: Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich' ) ?>
+    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'Architekturbüro zur Sanierung und Planung im denkmalgeschützten Bereich' ) ?>
 
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>

@@ -44,14 +44,22 @@
             <div class="row d-none d-md-block">
                 <div class="col">
                     <h4>Weitere Projekte</h4>
-                    <div class="js-slick-multiple">
-                        <?php
-                            foreach ($allProjects as $otherProject) {
-                                if( $project->getId() != $otherProject->getId() ) {
-                                    renderSlide($otherProject);
+                    <div class="">
+                        <div class="js-slick-multiple">
+                            <?php
+                                foreach ($allProjects as $otherProject) {
+                                    if( $project->getId() != $otherProject->getId() ) {
+                                        renderSlide($otherProject);
+                                    }
                                 }
-                            }
-                        ?>
+                            ?>
+                        </div>
+                        <div class="js-next arrow next">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="js-prev arrow prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
                     </div>
                 </div>
             </div>

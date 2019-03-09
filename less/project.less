@@ -17,7 +17,24 @@ h4 {
 }
 
 .slide {
-    margin: 16px;
+    margin: 24px;
+
+    .subtitle {
+        margin: 16px 0;
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: ~"calc(50% - 18px)";
+    height: 24px;
+    width: 24px;
+    color: @red;
+    cursor: pointer;
+
+    &.next {
+        right: 0;
+    }
 }
 
 .slick-slider img {

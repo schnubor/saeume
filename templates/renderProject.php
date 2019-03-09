@@ -6,6 +6,7 @@
         echo '<img class="preview" src="' . $project->pictures[0]->getFile()->getUrl() . '">';
         echo '</div>';
         echo '</a>';
+        echo '<p class="subtitle">' . $project->headline . '</p>';
         echo '</div>';
     }
 ?>

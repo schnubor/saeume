@@ -4,14 +4,18 @@
             <div class="col-10">
                 <div class="logo">
                     <a href="/">
-                        <img src="/assets/images/logo.jpg" alt="Logo">
+                        <h1>Säum <span>Architekten</span></h1>
                     </a>
                 </div>
             </div>
 
             <div class="col-2">
                 <div class="bars">
-                    <i class="fas fa-bars"></i>
+                    <div class="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>

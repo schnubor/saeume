@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   $('.js-slick-multiple').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3
@@ -24,7 +24,15 @@ $(document).ready(function () {
 
   $('.nav-icon1').click(function(){
 		$(this).toggleClass('open');
-	});
+  });
+  
+  $('.js-next').click(function() {
+    $('.js-slick-multiple').slick('slickNext');
+  })
+  
+  $('.js-prev').click(function() {
+    $('.js-slick-multiple').slick('slickPrev');
+  })
 });
 
 function showNav() {

@@ -27,12 +27,19 @@
         <div class="container">
             <h2 class="title"><?php echo $project->headline ?></h2>
             
-            <div class="js-slick">
-                <?php
-                    foreach( $project->pictures as $asset ) {
-                        echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';
-                    }
-                ?>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="js-slick">
+                        <?php
+                            foreach( $project->pictures as $asset ) {
+                                echo '<div><img src="' . $asset->getFile()->getUrl() .'" /></div>';
+                            }
+                        ?>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <?php echo nl2br($renderer->render($project->facts)) ?>
+                </div>
             </div>
 
             <p>

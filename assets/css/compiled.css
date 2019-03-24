@@ -151,7 +151,7 @@
   width: 100%;
 }
 section {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .project {
   transition: .4s all;
@@ -195,7 +195,7 @@ h4 {
   margin-bottom: 24px;
 }
 .slide {
-  margin: 16px;
+  margin: 0px;
 }
 .slick-slider img {
   width: 100%;
@@ -236,7 +236,7 @@ footer {
 body {
   font-family: 'Open Sans', sans-serif;
   color: #111111;
-  background-color: #f7f1ea;
+  background-color: #f8f6f4;
 }
 a {
   color: #9b2321;

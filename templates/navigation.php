@@ -1,6 +1,6 @@
 <div class="navigation-wrapper">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-10">
                 <div class="logo">
                     <a href="/">

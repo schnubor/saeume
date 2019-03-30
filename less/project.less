@@ -16,25 +16,13 @@ h4 {
     margin-bottom: 24px;
 }
 
-.slide {
-    margin: 24px;
-
-    .subtitle {
-        margin: 16px 0;
-    }
+.more-wrapper {
+    width: ~"calc(100% + 16px)";
+    margin-left: -8px;
 }
 
-.arrow {
-    position: absolute;
-    top: ~"calc(50% - 18px)";
-    height: 24px;
-    width: 24px;
-    color: @red;
-    cursor: pointer;
-
-    &.next {
-        right: 0;
-    }
+.slide {
+    margin: 8px;
 }
 
 .slick-slider img {
@@ -56,4 +44,26 @@ h4 {
 
 .slick-dots li.slick-active button:before {
     color: @red;
+}
+
+.arrow {
+    position: absolute;
+    top: ~"calc(50% - 0px)";
+    height: 32px;
+    width: 32px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.prev {
+        left: 20px;
+    }
+
+    &.next {
+        right: 18px;
+    }
 }

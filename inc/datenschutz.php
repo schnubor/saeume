@@ -17,7 +17,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
         <section>
             <div class="container legal">
-                <h1><?php echo $entry->title ?></h1>
+                <h2 class="title"><?php echo $entry->title ?></h2>
                 <?php echo nl2br($renderer->render($entry->content)) ?>
             </div>
         </section>

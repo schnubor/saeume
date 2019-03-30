@@ -3,12 +3,11 @@
         <hr>
         <div class="row">
             <div class="col-md-8">
-                © Alle Rechte vorbehalten, 
-                <a href="/impressum" target="_blank">Impressum</a>, 
-                <a href="/datenschutz" target="_blank">Datenschutz</a>
+                © <span>Säum Architekten</span>. Alle Rechte vorbehalten
             </div>
             <div class="col-md-4 text-right">
-                Site by <a href="https://chko.org" target="_blank">chko.org</a>
+                <a href="/impressum">Impressum</a>
+                <a href="/datenschutz" style="padding-left: 16px;">Datenschutz</a>
             </div>
         </div>
     </div>

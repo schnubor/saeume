@@ -14,12 +14,24 @@ $(document).ready(function () {
     slidesToScroll: 3
   });
 
-  $('.navigation-wrapper .bars').click(function () {
-    showNav();
-  })
+  // $('.navigation-wrapper .bars').click(function () {
+  //   showNav();
+  // })
 
-  $('.js-close').click(function () {
-    hideNav();
+  // $('.js-close').click(function () {
+  //   hideNav();
+  // })
+
+  $('.nav-icon1').click(function(){
+		$(this).toggleClass('open');
+  });
+  
+  $('.js-next').click(function() {
+    $('.js-slick-multiple').slick('slickNext');
+  })
+  
+  $('.js-prev').click(function() {
+    $('.js-slick-multiple').slick('slickPrev');
   })
 });
 

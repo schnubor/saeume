@@ -1,5 +1,5 @@
 <div class="navigation-wrapper">
-    <div class="container">
+    <div class="container relative">
         <div class="row align-items-center">
             <div class="col-10">
                 <div class="logo">
@@ -19,35 +19,31 @@
                 </div>
             </div>
         </div>
+
+        <div class="nav-overlay">
+            <ul class="list">
+                <li class="item js-close">
+                    <a href="/">Projekte</a>
+                </li>
+                <li class="item js-close">
+                    <a href="/office">Büro</a>
+                </li>
+                <li class="item light js-close">
+                    <a href="/office#profil">Profil</a>
+                </li>
+                <li class="item light js-close">
+                    <a href="/office#team">Portrait & Team</a>
+                </li>
+                <li class="item light js-close">
+                    <a href="/office#leistungen">Leistungen</a>
+                </li>
+                <li class="item light js-close">
+                    <a href="/office#technik">Technik</a>
+                </li>
+                <li class="item js-close">
+                    <a href="/kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-
-<div class="nav-overlay">
-    <div class="close js-close">
-        <i class="fas fa-times"></i>
-    </div> 
-
-    <ul class="list">
-        <li class="item js-close">
-            <a href="/">Projekte</a>
-        </li>
-        <li class="item js-close">
-            <a href="/office">Büro</a>
-        </li>
-        <li class="item light js-close">
-            <a href="/office#profil">Profil</a>
-        </li>
-        <li class="item light js-close">
-            <a href="/office#team">Portrait & Team</a>
-        </li>
-        <li class="item light js-close">
-            <a href="/office#leistungen">Leistungen</a>
-        </li>
-        <li class="item light js-close">
-            <a href="/office#technik">Technik</a>
-        </li>
-        <li class="item js-close">
-            <a href="/kontakt">Kontakt</a>
-        </li>
-    </ul>
 </div>

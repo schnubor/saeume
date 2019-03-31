@@ -17,7 +17,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
     <section id="office">
         <div class="container">
-            <div class="row align-items-center" id="profil">
+            <div class="row" id="profil">
                 <div class="col-md-6">
                     <h2><?php echo $entry->title ?></h2>
                     <?php echo nl2br($renderer->render($entry->profil)) ?>
@@ -29,7 +29,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
             <hr class="divider">
 
-            <div class="row align-items-center" id="team">
+            <div class="row" id="team">
                 <div class="col-md-6">
                     <?php echo '<img src="' . $entry->portraitbild->getFile()->getUrl() . '" />'; ?>
                 </div>

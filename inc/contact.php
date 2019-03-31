@@ -17,26 +17,26 @@
 
         <section id="contact">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-md-4">
                         <?php echo nl2br($renderer->render($entry->kontaktdaten)) ?>
 
                         <ul>
                             <li>
-                                <i class="fas fa-envelope"></i>
+                                <span class="option">Mail</span>
                                 <a href="mailto:<?php echo $entry->email; ?>">
                                     <?php echo $entry->email; ?>
                                 </a>
                             </li>
                             <li>
-                                <i class="fas fa-phone"></i>
-                                <a href="mailto:<?php echo $entry->telefon; ?>">
+                                <span class="option">Fon</span>
+                                <a href="tel:<?php echo $entry->telefon; ?>">
                                     <?php echo $entry->telefon; ?>
                                 </a>
                             </li>
-                            <li>
-                                <i class="fas fa-fax"></i>
-                                <a href="mailto:<?php echo $entry->fax; ?>">
+                            <li class="last">
+                                <span class="option">Fax</span>
+                                <a href="tel:<?php echo $entry->fax; ?>">
                                     <?php echo $entry->fax; ?>
                                 </a>
                             </li>

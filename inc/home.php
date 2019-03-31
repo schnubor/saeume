@@ -16,7 +16,7 @@
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>
 
-        <section>
+        <section id="projects">
             <div class="container">
                 <div class="row">
                 <?php

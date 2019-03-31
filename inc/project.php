@@ -52,7 +52,7 @@
 
             <hr class="divider">
 
-            <div class="row d-none d-md-block">
+            <div class="row">
                 <div class="col">
                     <h4>Weitere Projekte</h4>
                     <div>

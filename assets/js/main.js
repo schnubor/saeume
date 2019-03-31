@@ -14,39 +14,31 @@ $(document).ready(function () {
     slidesToScroll: 3
   });
 
-  // $('.navigation-wrapper .bars').click(function () {
-  //   showNav();
-  // })
+  $('.navigation-wrapper .bars').click(function () {
+    toggleNav();
+  })
 
-  // $('.js-close').click(function () {
-  //   hideNav();
-  // })
-
-  $('.nav-icon1').click(function(){
-		$(this).toggleClass('open');
+  $('.nav-icon1').click(function () {
+    $(this).toggleClass('open');
   });
-  
-  $('.js-next').click(function() {
+
+  $('.js-next').click(function () {
     $('.js-slick-multiple').slick('slickNext');
   })
-  
-  $('.js-prev').click(function() {
+
+  $('.js-prev').click(function () {
     $('.js-slick-multiple').slick('slickPrev');
   })
 });
 
-function showNav() {
-  $('.nav-overlay').css("display", "flex").hide().fadeIn();
+function toggleNav() {
+  $('.nav-overlay').toggleClass('visible');
 }
 
-function hideNav() {
-  $('.nav-overlay').fadeOut();
-}
-
-$('.js-next').click(function() {
+$('.js-next').click(function () {
   $('.js-slick-multiple').slick('slickNext');
 })
 
-$('.js-prev').click(function() {
+$('.js-prev').click(function () {
   $('.js-slick-multiple').slick('slickPrev');
 })

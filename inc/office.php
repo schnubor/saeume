@@ -19,7 +19,7 @@ $renderer = new \Contentful\RichText\Renderer();
         <div class="container">
             <div class="row" id="profil">
                 <div class="col-md-6">
-                    <h2><?php echo $entry->title ?></h2>
+                    <h2 class="title"><?php echo $entry->title ?></h2>
                     <?php echo nl2br($renderer->render($entry->profil)) ?>
                 </div>
                 <div class="col-md-6">
@@ -34,7 +34,7 @@ $renderer = new \Contentful\RichText\Renderer();
                     <?php echo '<img src="' . $entry->portraitbild->getFile()->getUrl() . '" />'; ?>
                 </div>
                 <div class="col-md-6">
-                    <h2>Dortje Säum & Team</h2>
+                    <h2 class="title">Dortje Säum & Team</h2>
                     <?php echo nl2br($renderer->render($entry->portrait)) ?>
                 </div>
             </div>
@@ -44,7 +44,7 @@ $renderer = new \Contentful\RichText\Renderer();
             <div class="row" id="leistungen">
                 <div class="col-md-12">
                     <div class="list">
-                        <h2>Leistungen</h3>
+                        <h2 class="title">Leistungen</h3>
                         <?php echo nl2br($renderer->render($entry->leistungen)) ?>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ $renderer = new \Contentful\RichText\Renderer();
             <div class="row" id="technik">
                 <div class="col-md-6">
                         <div class="list">
-                            <h2>Technik</h3>
+                            <h2 class="title">Technik</h3>
                             <?php echo nl2br($renderer->render($entry->technik)) ?>
                         </div>
                     </div>

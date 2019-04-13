@@ -221,6 +221,9 @@ section {
   margin-bottom: 24px;
   font-family: 'Hind', sans-serif;
 }
+.title.top {
+  margin-top: 24px;
+}
 p {
   font-family: 'Open Sans', sans-serif;
 }
@@ -284,12 +287,11 @@ h4 {
 }
 #office .divider {
   border-top: 1px solid transparent;
-  margin: 34px 0;
+  margin-bottom: 59px;
 }
 footer {
   display: flex;
-  height: 80px;
-  margin-top: 32px;
+  margin: 32px 0;
   font-size: 14px;
 }
 body {

@@ -30,12 +30,12 @@ $(document).ready(function () {
     ]
   });
 
-  $('.navigation-wrapper .bars').click(function () {
+  $('.navigation-wrapper .bars, .js-close').click(function () {
     toggleNav();
   })
 
-  $('.nav-icon1').click(function () {
-    $(this).toggleClass('open');
+  $('.nav-icon1, .js-close').click(function () {
+    $('.nav-icon1').toggleClass('open');
   });
 
   $('.js-next').click(function () {

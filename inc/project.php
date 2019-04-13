@@ -46,9 +46,11 @@
                 </div>
             </div>
 
-            <p>
-                <?php echo nl2br($renderer->render($project->description)) ?>
-            </p>
+            <div class="row">
+                <div class="col-md-8">
+                    <?php echo nl2br($renderer->render($project->description)) ?>
+                </div>
+            </div>
 
             <hr class="divider">
 

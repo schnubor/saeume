@@ -18,7 +18,7 @@
 
         <section id="projects">
             <div class="container">
-                <div class="row">
+                <div class="row tight">
                 <?php
                     foreach ($projects as $project) {
                         renderProject($project);

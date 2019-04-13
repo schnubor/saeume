@@ -36,8 +36,8 @@
         }
 
         .nav-icon1 {
-            width: 30px;
-            height: 18px;
+            width: 24px;
+            height: 15px;
             position: relative;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
@@ -52,7 +52,7 @@
             span {
                 display: block;
                 position: absolute;
-                height: 2px;
+                height: 1px;
                 width: 100%;
                 background: white;
                 border-radius: 9px;
@@ -72,11 +72,11 @@
                 }
 
                 &:nth-child(2) {
-                    top: 8px;
+                    top: 7px;
                 }
 
                 &:nth-child(3) {
-                    top: 16px;
+                    top: 14px;
                 }
             }
 
@@ -158,12 +158,17 @@
         .item {
             cursor: pointer;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 14px;
             border-top: 1px solid #202020;
             color: white;
 
+            &.sub {
+                padding-left: 16px;
+                font-weight: 100;
+            }
+
             &:hover {
-                color: @red;
+                color: @grey;
             }
 
             a {

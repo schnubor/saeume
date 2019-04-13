@@ -25,19 +25,16 @@
                 <li class="item js-close">
                     <a href="/">Projekte</a>
                 </li>
-                <li class="item js-close">
-                    <a href="/office">Büro</a>
-                </li>
                 <li class="item light js-close">
-                    <a href="/office#profil">Profil</a>
+                    <a href="/office">Profil</a>
                 </li>
-                <li class="item light js-close">
+                <li class="item light js-close sub">
                     <a href="/office#team">Portrait & Team</a>
                 </li>
-                <li class="item light js-close">
+                <li class="item light js-close sub">
                     <a href="/office#leistungen">Leistungen</a>
                 </li>
-                <li class="item light js-close">
+                <li class="item light js-close sub">
                     <a href="/office#technik">Technik</a>
                 </li>
                 <li class="item js-close">

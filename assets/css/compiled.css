@@ -32,8 +32,8 @@
   cursor: pointer;
 }
 .navigation-wrapper .bars .nav-icon1 {
-  width: 30px;
-  height: 18px;
+  width: 24px;
+  height: 15px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -48,7 +48,7 @@
 .navigation-wrapper .bars .nav-icon1 span {
   display: block;
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: white;
   border-radius: 9px;
@@ -67,10 +67,10 @@
   top: 0px;
 }
 .navigation-wrapper .bars .nav-icon1 span:nth-child(2) {
-  top: 8px;
+  top: 7px;
 }
 .navigation-wrapper .bars .nav-icon1 span:nth-child(3) {
-  top: 16px;
+  top: 14px;
 }
 .navigation-wrapper .bars .nav-icon1.open span:nth-child(1) {
   top: 8px;
@@ -138,12 +138,16 @@
 .nav-overlay .list .item {
   cursor: pointer;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   border-top: 1px solid #202020;
   color: white;
 }
+.nav-overlay .list .item.sub {
+  padding-left: 16px;
+  font-weight: 100;
+}
 .nav-overlay .list .item:hover {
-  color: #9b2321;
+  color: #a0a0a0;
 }
 .nav-overlay .list .item a {
   transition: .2s all;

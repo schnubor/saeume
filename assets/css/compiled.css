@@ -98,11 +98,11 @@
 }
 .navigation-wrapper h1 {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 21px;
   margin-bottom: 0;
 }
 .navigation-wrapper h1 span {
-  font-size: 12px;
+  font-size: 13px;
   color: #b9b9b9;
 }
 .nav-overlay {
@@ -219,30 +219,47 @@ section {
 }
 .title {
   margin-bottom: 24px;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
-.title.top {
-  margin-top: 24px;
+@media screen and (max-width: 575px) {
+  .title.top {
+    margin-top: 24px;
+  }
 }
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 h4 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .divider {
   border-top: 1px solid transparent;
   margin-bottom: 24px;
 }
+.more {
+  background-color: #d8d8d8;
+  padding-top: 20px;
+}
 .more-wrapper {
   width: calc(100% + 16px);
   margin-left: -8px;
+}
+.more-title {
+  font-size: 20px;
+}
+.arrow-wrapper {
+  position: relative;
 }
 .slide {
   margin: 8px;
 }
 .slide .subtitle {
   margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .slick-slider img {
   width: 100%;
@@ -258,11 +275,11 @@ h4 {
   margin-bottom: 40px;
 }
 .slick-dots li.slick-active button:before {
-  color: #9b2321;
+  color: #d63432;
 }
 .arrow {
   position: absolute;
-  top: calc(50% - 16px);
+  top: calc(50% - 32px);
   height: 32px;
   width: 32px;
   color: white;
@@ -274,10 +291,10 @@ h4 {
   justify-content: center;
 }
 .arrow.prev {
-  left: 20px;
+  left: 10px;
 }
 .arrow.next {
-  right: 18px;
+  right: 10px;
 }
 #office ul {
   margin: 0;
@@ -291,20 +308,20 @@ h4 {
 }
 footer {
   display: flex;
-  margin: 32px 0;
+  margin: 32px 0 24px;
   font-size: 14px;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #111111;
-  background-color: #f8f6f4;
+  background-color: #e9ecef;
 }
 a {
-  color: #9b2321;
+  color: #d63432;
 }
 a:hover,
 a:active {
-  color: #9b2321;
+  color: #d63432;
 }
 .legal h1 {
   margin-bottom: 32px;

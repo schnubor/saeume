@@ -1,6 +1,6 @@
 <?php
 try {
-    $entry = $contentfulClient->getEntry('7qUoD8kEtwaDjGnyorQ5CR');
+    $entry = $contentfulClient->getEntry('6y2Rqqc1EoESjo6WrXjOQe');
 } catch (\Contentful\Core\Exception\NotFoundException $exception) {
     debug_to_console('Contentful error: ' . $exception);
 }

@@ -54,10 +54,13 @@
 
             <hr class="divider">
 
-            <div class="row">
-                <div class="col">
-                    <h4>Weitere Projekte</h4>
-                    <div>
+        </div>
+        
+        <div class="row more">
+            <div class="col">
+                <div class="container">
+                    <h4 class="more-title">Weitere Projekte</h4>
+                    <div class="arrow-wrapper">
                         <div class="js-slick-multiple more-wrapper">
                             <?php
                                 foreach ($allProjects as $otherProject) {

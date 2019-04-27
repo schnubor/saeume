@@ -53,29 +53,26 @@
             </div>
 
             <hr class="divider">
-
         </div>
         
-        <div class="row more">
-            <div class="col">
-                <div class="container">
-                    <h4 class="more-title">Weitere Projekte</h4>
-                    <div class="arrow-wrapper">
-                        <div class="js-slick-multiple more-wrapper">
-                            <?php
-                                foreach ($allProjects as $otherProject) {
-                                    if( $project->getId() != $otherProject->getId() ) {
-                                        renderSlide($otherProject);
-                                    }
+        <div class="more">
+            <div class="container">
+                <h4 class="more-title">Weitere Projekte</h4>
+                <div class="arrow-wrapper">
+                    <div class="js-slick-multiple more-wrapper">
+                        <?php
+                            foreach ($allProjects as $otherProject) {
+                                if( $project->getId() != $otherProject->getId() ) {
+                                    renderSlide($otherProject);
                                 }
-                            ?>
-                        </div>
-                        <div class="js-next arrow next">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                        <div class="js-prev arrow prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </div>
+                            }
+                        ?>
+                    </div>
+                    <div class="js-next arrow next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="js-prev arrow prev">
+                        <i class="fas fa-chevron-left"></i>
                     </div>
                 </div>
             </div>

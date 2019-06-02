@@ -1,8 +1,33 @@
+@font-face {
+  font-family: ArchCondensed;
+  src: url(./fonts/CondensedBold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: ArchCondensed;
+  src: url(./fonts/Condensed.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Arch;
+  src: url(./fonts/Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Arch;
+  src: url(./fonts/Book.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Arch;
+  src: url(./fonts/Light.otf);
+  font-weight: light;
+}
 .navigation-wrapper {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: rgba(20,20,20,0.95);
+  background-color: rgba(105,105,105,0.98);
   position: fixed;
   top: 0;
   left: 0;
@@ -111,7 +136,7 @@
   min-height: 100%;
   z-index: 1;
   top: 42px;
-  background-color: rgba(20,20,20,0.95);
+  background-color: rgba(105,105,105,0.98);
   right: 0;
   text-align: left;
   margin-right: 15px;
@@ -139,7 +164,7 @@
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
-  border-top: 1px solid #202020;
+  border-top: 1px solid rgba(120,120,120,0.98);
   color: white;
 }
 .nav-overlay .list .item.sub {
@@ -219,8 +244,9 @@ section {
 }
 .title {
   margin-bottom: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'ArchCondensed', sans-serif;
   font-size: 20px;
+  line-height: .7;
 }
 @media screen and (max-width: 575px) {
   .title.top {
@@ -260,6 +286,7 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: #aa0022;
 }
 .slick-slider img {
   width: 100%;
@@ -275,7 +302,7 @@ h4 {
   margin-bottom: 40px;
 }
 .slick-dots li.slick-active button:before {
-  color: #d63432;
+  color: #aa0022;
 }
 .arrow {
   position: absolute;
@@ -311,17 +338,23 @@ footer {
   margin: 32px 0 24px;
   font-size: 14px;
 }
+footer a {
+  color: #696969;
+}
+footer a:hover {
+  color: #202020;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   color: #111111;
   background-color: #e9ecef;
 }
 a {
-  color: #d63432;
+  color: #aa0022;
 }
 a:hover,
 a:active {
-  color: #d63432;
+  color: #aa0022;
 }
 .legal h1 {
   margin-bottom: 32px;

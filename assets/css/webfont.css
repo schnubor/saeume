@@ -1,0 +1,22 @@
+
+    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=5ca5be1e-cf6e-4a2f-acb4-622260b9bf62&fontids=1475786,1475798,1475810,1475846");
+    @font-face{
+        font-family:"Futura LT W01 Light";
+        src:url("Fonts/1475786/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix");
+        src:url("Fonts/1475786/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix") format("eot"),url("Fonts/1475786/26091050-06ef-4fd5-b199-21b27c0ed85e.woff2") format("woff2"),url("Fonts/1475786/cca525a8-ad89-43ae-aced-bcb49fb271dc.woff") format("woff"),url("Fonts/1475786/88cc7a39-1834-4468-936a-f3c25b5d81a1.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"Futura LT W01 Book";
+        src:url("Fonts/1475798/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
+        src:url("Fonts/1475798/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"),url("Fonts/1475798/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),url("Fonts/1475798/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"),url("Fonts/1475798/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"Futura LT W01 Medium";
+        src:url("Fonts/1475810/0a41510f-c527-4001-89c5-d66d2c9ed34b.eot?#iefix");
+        src:url("Fonts/1475810/0a41510f-c527-4001-89c5-d66d2c9ed34b.eot?#iefix") format("eot"),url("Fonts/1475810/e17c7943-8db2-4470-9e2a-74a8d01f6776.woff2") format("woff2"),url("Fonts/1475810/6c72b0cb-89a1-4da9-8574-9244967bd9d6.woff") format("woff"),url("Fonts/1475810/dd79c75a-b0c9-4d70-a5a7-bdde1d5449fd.ttf") format("truetype");
+    }
+    @font-face{
+        font-family:"Futura LT W01 Heavy";
+        src:url("Fonts/1475846/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix");
+        src:url("Fonts/1475846/752e3189-96d5-4999-8ae7-c435a470461b.eot?#iefix") format("eot"),url("Fonts/1475846/f3fa9288-dc04-4f75-b949-b06584863c9c.woff2") format("woff2"),url("Fonts/1475846/6b1bbd38-7556-4809-a151-88182a37116e.woff") format("woff"),url("Fonts/1475846/1f56887e-52d4-4229-b219-513cbef3ff58.ttf") format("truetype");
+    }

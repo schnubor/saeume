@@ -1,28 +1,3 @@
-@font-face {
-  font-family: ArchCondensed;
-  src: url(./fonts/CondensedBold.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: ArchCondensed;
-  src: url(./fonts/Condensed.ttf);
-  font-weight: normal;
-}
-@font-face {
-  font-family: Arch;
-  src: url(./fonts/Bold.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: Arch;
-  src: url(./fonts/Book.otf);
-  font-weight: normal;
-}
-@font-face {
-  font-family: Arch;
-  src: url(./fonts/Light.otf);
-  font-weight: light;
-}
 .navigation-wrapper {
   height: 60px;
   display: flex;
@@ -244,7 +219,7 @@ section {
 }
 .title {
   margin-bottom: 24px;
-  font-family: 'ArchCondensed', sans-serif;
+  font-family: 'Futura LT W01 Medium';
   font-size: 20px;
   line-height: .7;
 }
@@ -254,11 +229,11 @@ section {
   }
 }
 p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-family: 'Futura LT W01 Light';
+  font-size: 1em;
 }
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Futura LT W01 Medium';
 }
 .divider {
   border-top: 1px solid transparent;
@@ -345,7 +320,7 @@ footer a:hover {
   color: #202020;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Futura LT W01 Book';
   color: #111111;
   background-color: #e9ecef;
 }

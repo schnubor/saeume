@@ -37,7 +37,7 @@
                         ?>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 facts">
                     <?php
                         if( $project->facts ) {
                             echo nl2br($renderer->render($project->facts));

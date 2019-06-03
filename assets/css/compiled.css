@@ -235,6 +235,9 @@ p {
 h4 {
   font-family: 'Futura LT W01 Medium';
 }
+.facts {
+  margin-top: -5px;
+}
 .divider {
   border-top: 1px solid transparent;
   margin-bottom: 24px;

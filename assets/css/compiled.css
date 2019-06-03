@@ -262,6 +262,7 @@ h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #aa0022;
+  font-family: 'Futura LT W01 Book';
 }
 .slick-slider img {
   width: 100%;
@@ -308,6 +309,14 @@ h4 {
   border-top: 1px solid transparent;
   margin-bottom: 59px;
 }
+#office .textSection {
+  position: relative;
+}
+#office .textSection .anchor {
+  position: absolute;
+  left: 0;
+  top: -24px;
+}
 footer {
   display: flex;
   margin: 32px 0 24px;
@@ -333,4 +342,13 @@ a:active {
 }
 .legal h1 {
   margin-bottom: 32px;
+}
+.legal h6 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Futura LT W01 Light';
+  margin-bottom: 0;
+}
+strong {
+  font-family: 'Futura LT W01 Medium';
 }

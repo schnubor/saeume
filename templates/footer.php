@@ -3,7 +3,9 @@
         <hr>
         <div class="row">
             <div class="col-6">
-                © <span>SÄUM Architekten</span>
+                <div class="footer-logo">
+                    SÄUM <span>ARCHITEKTEN</span>
+                </div>
             </div>
             <div class="col-6 text-right">
                 <a href="/impressum">Impressum</a>

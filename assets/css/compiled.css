@@ -172,7 +172,7 @@ section {
   margin: 0;
 }
 .col-md-4.tight {
-  padding: 0 1px;
+  padding: 2px;
 }
 .project {
   transition: .4s all;
@@ -330,6 +330,12 @@ footer a {
 }
 footer a:hover {
   color: #202020;
+}
+footer .footer-logo {
+  font-size: 16px;
+}
+footer .footer-logo span {
+  font-size: 12px;
 }
 body {
   font-family: 'Futura LT W01 Book';

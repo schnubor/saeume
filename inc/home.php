@@ -1,9 +1,7 @@
 <?php
     require( TEMPLATE_DIR . 'renderProject.php' );
-    $query = new \Contentful\Delivery\Query();
-    $query->setContentType('project');
     try {
-        $projects = $contentfulClient->getEntries($query);
+        $projectList = $contentfulClient->getEntry( 'wKIUyMVVYJvtpxspcJvtL' );
     } catch (\Contentful\Core\Exception\NotFoundException $exception) {
         debug_to_console( 'Contentful error: ' . $exception );
     }
@@ -20,7 +18,7 @@
             <div class="container">
                 <div class="row tight">
                 <?php
-                    foreach ($projects as $project) {
+                    foreach ($projectList->liste as $project) {
                         renderProject($project);
                     }
                 ?>

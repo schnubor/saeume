@@ -223,7 +223,7 @@ section {
   font-size: 20px;
   line-height: .7;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .title.top {
     margin-top: 24px;
   }

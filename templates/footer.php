@@ -6,6 +6,9 @@
                 <div class="footer-logo">
                     SÄUM <span>ARCHITEKTEN</span>
                 </div>
+                <div class="email">
+                    <a href="mailto:post@saeum.eu">post@saeum.eu</a>
+                </div>
             </div>
             <div class="col-6 text-right">
                 <a href="/impressum">Impressum</a>

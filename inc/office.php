@@ -47,7 +47,7 @@ $renderer = new \Contentful\RichText\Renderer();
                 <hr class="divider">
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <div class="list">
                             <h2 class="title">Leistungen</h3>
                             <?php echo nl2br($renderer->render($entry->leistungen)) ?>
@@ -61,10 +61,10 @@ $renderer = new \Contentful\RichText\Renderer();
                 <hr class="divider">
 
                 <div class="row" id="technik">
-                    <div class="col-md-6">
+                    <div class="col-md-6 offset-md-6">
                             <div class="list">
-                                <h2 class="title">Technik</h3>
-                                <?php echo nl2br($renderer->render($entry->technik)) ?>
+                                <h2 class="title">Technische Ausstattung</h3>
+                                <?php echo nl2br($renderer->render($entry->technischeAusstattung)) ?>
                             </div>
                         </div>
                     </div>

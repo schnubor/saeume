@@ -29,13 +29,13 @@
                     <a href="/office">Profil</a>
                 </li>
                 <li class="item light js-close sub">
-                    <a href="/office#team">Portrait & Team</a>
+                    <a href="/office#team">Team</a>
                 </li>
                 <li class="item light js-close sub">
                     <a href="/office#leistungen">Leistungen</a>
                 </li>
                 <li class="item light js-close sub">
-                    <a href="/office#technik">Technik</a>
+                    <a href="/office#technik">Techn. Ausstattung</a>
                 </li>
                 <li class="item js-close">
                     <a href="/kontakt">Kontakt</a>

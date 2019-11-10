@@ -23,7 +23,7 @@ $renderer = new \Contentful\RichText\Renderer();
                     <?php echo nl2br($renderer->render($entry->profil)) ?>
                 </div>
                 <div class="col-md-6">
-                    <?php echo '<img src="' . $entry->profilbild->getFile()->getUrl() . '" />'; ?>
+                    <?php echo '<img src="' . $entry->profilbild->getFile()->getUrl() . '" alt="Bild zur technischen Ausstattung"/>'; ?>
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
                 <div class="row">
                     <div class="col-md-6">
-                        <?php echo '<img src="' . $entry->portraitbild->getFile()->getUrl() . '" />'; ?>
+                        <?php echo '<img src="' . $entry->portraitbild->getFile()->getUrl() . '" alt="Profilbild"/>'; ?>
                     </div>
                     <div class="col-md-6">
                         <h2 class="title top">Dortje Säum & Team</h2>
@@ -61,9 +61,12 @@ $renderer = new \Contentful\RichText\Renderer();
                 <hr class="divider">
 
                 <div class="row" id="technik">
-                    <div class="col-md-6 offset-md-6">
+                    <div class="col-md-6">
+                        <?php echo '<img src="' . $entry->technischeAusstattungBild->getFile()->getUrl() . '" alt="Bild zur technischen Ausstattung"/>'; ?>
+                    </div>
+                    <div class="col-md-6">
                             <div class="list">
-                                <h2 class="title">Technische Ausstattung</h3>
+                                <h2 class="title top">Technische Ausstattung</h3>
                                 <?php echo nl2br($renderer->render($entry->technischeAusstattung)) ?>
                             </div>
                         </div>

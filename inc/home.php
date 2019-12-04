@@ -9,7 +9,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'Architekturbüro zur Sanierung und Planung im denkmalgeschützten Bereich' ) ?>
+    <?php renderHead( 'Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'Architekturbüro für Umbau, Sanierung und Neubau von Gebäuden für die öffentliche Hand und private Bauträger in Berlin und Brandenburg mit Schwerpunkt Bauen im Bestand und Denkmalschutz.
+Alle Leistungsphasen der HOAI von Entwicklung bis Übergabe der Bauvorhaben an den Nutzer.' ) ?>
 
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>
